@@ -1,6 +1,9 @@
 !#/bin/bash
 
-echo "ramesh :: Hi suresh how are you"
-echo "suresh :: Hi ramesh I am fine,how are you"
-echo "ramesh :: I am fine thank you how is your work"
-echo "sursh : : I am thinking to upgrde to devops"
+person1=raheem
+person2=sachin
+
+echo "$person1 :: Hi $person2 how are you"
+echo "$person2 :: Hi $person1 I am fine,how are you"
+echo "$person1 :: I am fine thank you $person1 how is your work"
+echo "$person2 : : I am thinking to upgrde to devops"
