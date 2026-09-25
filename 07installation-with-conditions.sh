@@ -5,6 +5,7 @@ dnf install mysql -y
 if [ $? -ne 0 ]
 then
     echo "you are not a super user"
+    exit 1
 else 
     echo "you are a super user"
 fi
