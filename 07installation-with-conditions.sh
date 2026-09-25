@@ -11,4 +11,12 @@ else
     echo "you are a super user"
 fi
 
-echo "please run this command with super user"
+dnf install git -y
+
+if [ $? -ne 0 ]
+then
+    echo "run this command with super user"
+    exit 1
+else
+    echo "installation of git success"
+fi        
