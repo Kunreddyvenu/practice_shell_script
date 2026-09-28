@@ -1,0 +1,31 @@
+#!/bin/bash
+
+check_disk(){
+    echo "check disk spsce"
+    df -h \
+}
+
+check_memory(){
+
+    echo "check memory status"
+    free -h
+}
+
+check_uptime(){
+
+    echo "check uptime"
+    uptime
+}
+
+echo "=======server Health Status=========="
+
+check_disk
+echo
+
+check_memory
+echo
+
+check_uptime
+echo
+
+echo "====checkup completed===="
