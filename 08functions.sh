@@ -1,8 +1,10 @@
 #!/bin/bash
 greet_user(){
 
-    echo "Hello Venu"
-    echo "welcome to sell scripting"
+  Name=$1
+  echo "hello $Name"
 }
 
-greet_user
+greet_user "venu"
+greet_user "sreenu"
+greet_user "manu"
