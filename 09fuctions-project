@@ -2,7 +2,7 @@
 
 check_disk(){
     echo "check disk spsce"
-    df -h \
+    df -h 
 }
 
 check_memory(){
