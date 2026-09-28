@@ -16,7 +16,7 @@ VALIDATE(){
     fi
 }
 
-if ( $USERID -ne 0 ) {
+if [ $USERID -ne 0 ] 
 
 then
     echo "please run this script usign root pass"
@@ -24,8 +24,6 @@ exit 1
 else
     echo "you are super user"
 fi
-
-}
 
 dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "installing mysql"
