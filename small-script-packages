@@ -31,9 +31,10 @@ do
     echo "package to install: $i"
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0 ]
-    echo -e "$i already installed $Y Skiping $N"
+    then
+        echo -e "$i already installed $Y Skipping $N"
     else 
-        dnf insall $i -y &>>$LOGFILE
+        dnf install $i -y &>>$LOGFILE
         VALIDATE $? "installation of $i"
     fi
 done
