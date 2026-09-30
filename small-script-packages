@@ -18,7 +18,7 @@ VALIDATE(){
      fi      
 }
 
-if [ USERID -ne o]
+if [ USERID -ne 0 ]
 then
     echo "please run this script using root user" 
     exit 1 #Manully exit if error comes 
@@ -32,7 +32,6 @@ do
     dnf list installed $i &>>$LOGFILE
     if [$? id -eq 0]
     echo -e "$i already installed $Y Skiping $N"
-
     else 
         dnf insall $i -y &>>$LOGFILE
         VALIDATE $? "installation of $i"
