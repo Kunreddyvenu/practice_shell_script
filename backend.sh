@@ -61,7 +61,7 @@ VALIDATE $? "extracted backend code"
 npm install &>>$LOGFILE
 VALIDATE $? "installing nodejs dependecies"
 
-cp/home/ec2-user/practice_shell_script/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/practice_shell_script/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "Copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
