@@ -70,7 +70,7 @@ VALIDATE $? "Daemon reload"
 systemctl start backend &>>$LOGFILE
 VALIDATE $? "starting backend service"
 
-systemctl enbale backend &>>$LOGFILE
+systemctl enable backend &>>$LOGFILE
 VALIDATE $? "enabling backend service"
 
 dnf install mysql -y &>>$LOGFILE
